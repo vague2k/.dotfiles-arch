@@ -1,0 +1,57 @@
+set previewer ~/.config/lf/scripts/lf_kitty_preview
+set cleaner ~/.config/lf/scripts/lf_kitty_clean
+
+# Basic Settings
+set hidden true
+set ignorecase true
+set icons true
+set shell sh
+set shellopts '-eu'
+set ifs "\n"
+set scrolloff 8
+
+# Create dir
+cmd mkdir ${{
+  printf "Directory Name: "
+  read ans
+  mkdir $ans
+}}
+
+# Create file
+cmd mkfile ${{
+  printf "File Name: "
+  read ans
+  $EDITOR $ans
+}}
+
+# extract a compressed file
+cmd unarchive ${{
+  case "$f" in
+      *.zip) unzip "$f" ;;
+      *.tar.gz) tar -xzvf "$f" ;;
+      *.tar.bz2) tar -xjvf "$f" ;;
+      *.tar) tar -xvf "$f" ;;
+      *) echo "Unsupported format" ;;
+  esac
+}}
+
+# Trash bindings
+cmd trash %set -f; mv $fx $XDG_DATA_HOME/Trash/
+
+# Bindings
+map d
+map m
+
+# Basic Functions
+map . set hidden!
+map R reload
+map dd trash
+map X unarchive
+map md mkdir
+map mf mkfile
+map C clear
+map <enter> open
+
+# Movement
+map gc cd ~/.config
+map gh cd ~/Documents/GitHub

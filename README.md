@@ -34,6 +34,7 @@ Most of the packages can be installed with pacman. A couple can be found in the 
 - Logout/Display manager - [sddm](https://github.com/sddm/sddm)
 - Sddm Theme - [reactionary](https://www.opendesktop.org/p/1376447)
 - File manager - [thunar](https://archlinux.org/packages/extra/x86_64/thunar/)
+- TUI File manager - [lf](https://github.com/gokcehan/lf)
 - screenshots - [grimshot (AUR)](https://aur.archlinux.org/packages/grimshot)
 - Image Viewer - [sxiv](https://wiki.archlinux.org/title/sxiv)
 - Enable cursor theme and such - [nwg-look](https://github.com/nwg-piotr/nwg-look)
