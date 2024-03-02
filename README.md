@@ -1,9 +1,10 @@
 # 📁 My Dotfiles for Arch Linux
 
-![2024-02-24T01:15:07,749589197-05:00](https://github.com/vague2k/.dotfiles-arch/assets/121782036/9773043c-3959-41ad-8f33-887878dbaa7e)
-![2024-02-24T01:10:13,533739966-05:00](https://github.com/vague2k/.dotfiles-arch/assets/121782036/7f7278f8-6117-4ebe-a5c7-2f9ce42c8b4d)
-![2024-02-24T01:11:02,249906469-05:00](https://github.com/vague2k/.dotfiles-arch/assets/121782036/c51f7114-4622-4007-a9df-02231bcffcf4)
-![2024-02-24T01:13:11,502057343-05:00](https://github.com/vague2k/.dotfiles-arch/assets/121782036/8f323483-07fd-45be-9660-5677b4e7f397)
+![2024-02-24T01:15:07,749589197-05:00](https://github.com/vague2k/.dotfiles-arch/assets/121782036/813b9bea-6bb4-47d3-97b1-66bb4632d405)
+![2024-02-24T01:10:13,533739966-05:00](https://github.com/vague2k/.dotfiles-arch/assets/121782036/ce484399-6b39-4a87-a5b7-f419f8776707)
+![2024-02-24T01:11:02,249906469-05:00](https://github.com/vague2k/.dotfiles-arch/assets/121782036/458ee146-dccd-4a9f-854d-fcf8e08a39ec)
+![2024-02-24T01:13:11,502057343-05:00](https://github.com/vague2k/.dotfiles-arch/assets/121782036/df8c27b6-767e-43fc-b822-bf8090cbb102)
+
 
 ## Welcome to dependency hell.
 
