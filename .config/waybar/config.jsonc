@@ -1,0 +1,43 @@
+[
+  {
+    "height": 38,
+	"spacing": 10,
+    "layer": "top",
+    "position": "top",
+    // "margin-top": 3,
+    // "margin-left": 5,
+    // "margin-right": 5,
+    "include": [
+      "~/.config/waybar/modules.json"
+    ],
+    "modules-left": [
+        "custom/launcher",
+        "custom/cycle",
+        "tray",
+        "hyprland/window"
+    ],
+    "modules-center": [
+      "hyprland/workspaces"
+    ],
+    "modules-right": [
+      "group/system",
+    ]
+  },
+  {
+    "height": 38,
+	"spacing": 10,
+    "layer": "top",
+    "position": "bottom",
+    // "margin-top": 3,
+    // "margin-left": 5,
+    // "margin-right": 5,
+    "include": [
+      "~/.config/waybar/modules.json"
+    ],
+    "modules-right": [
+      "pulseaudio",
+      "clock",
+      "custom/wlogout"
+    ]
+  }
+]

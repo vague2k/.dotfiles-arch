@@ -1,0 +1,46 @@
+configuration {
+  modi: "window,drun,ssh,combi";
+  display-drun: " 󰣇 ";
+  font: "Roboto Medium 12";
+  icon-theme : "Kora Icons";
+  combi-modi: "window,drun,ssh";
+}
+
+@import "~/.cache/wal/colors-rofi-dark"
+
+*{
+  background-color: transparent;
+}
+
+window{
+	width: env(WIDTH, 40%);
+	height: env(HEIGHT, 40%);
+  	border: 2px;
+	border-color: @selected-normal-background;
+	border-radius: 10px ;
+}
+
+textbox{
+	padding: 1em;
+}
+
+
+mainbox{
+  border-radius: 10px;	
+}
+
+entry {
+  placeholder: "Type anything";
+  cursor: pointer;
+ }
+
+element {
+  orientation: horizontal ;
+  spacing: 10px;
+  border-radius: 10px;
+  padding: 0.2em;
+}
+
+element-icon {
+  size: 1em;
+}

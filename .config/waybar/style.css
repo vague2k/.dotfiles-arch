@@ -1,0 +1,56 @@
+@import url("../../.cache/wal/colors-gtk3.css");
+
+* {
+  border: none;
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+window#waybar {
+  background: @background;
+  color: @foreground;
+}
+
+tooltip {
+  background-color: @background;
+  color: @foreground;
+  border-radius: 5px;
+}
+
+#battery,
+#network,
+#pulseaudio,
+#cpu,
+#disk,
+#memory {
+  margin: 0px 10px;
+}
+
+#workspaces {
+  padding: 6px;
+}
+
+#workspaces button {
+  padding: 0px 15px;
+  margin: 2px;
+  background: @color2Alpha;
+  transition: all 0.3s cubic-bezier(0.11, 1.09, 0.6, 0.96);
+}
+
+#workspaces button.active {
+  padding: 0px 35px;
+  background-color: @color13;
+}
+
+#workspaces button:hover {
+  background-color: @color4Alpha;
+}
+
+#system,
+#custom-launcher,
+#custom-wlogout,
+#window,
+#tray,
+#cycle,
+#clock {
+  padding: 0px 12px;
+}
