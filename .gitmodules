@@ -1,9 +1,12 @@
 [submodule ".config/kitty"]
 	path = .config/kitty
 	url = https://github.com/vague2k/dotfiles-kitty.git
+    branch = main
 [submodule ".config/zsh"]
 	path = .config/zsh
 	url = https://github.com/vague2k/dotfiles-zsh.git
+    branch = main
 [submodule ".config/nvim"]
 	path = .config/nvim
 	url = https://github.com/vague2k/dotfiles-nvim.git
+    branch = main
