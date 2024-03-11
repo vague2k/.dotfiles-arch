@@ -22,7 +22,7 @@ PICS=($(ls "${wallDIR}" | grep -E ".jpg$|.jpeg$|.png$|.gif$"))
 
 # Rofi command
 # rofi_command="~/.config/rofi/launchers/type-4/launcher.sh"
-rofi_command="rofi -show -dmenu -config ~/.config/rofi/wallpaper/wallpaper.rasi"
+rofi_command="rofi -dmenu -config ~/.config/rofi/wallpaper/wallpaper.rasi"
 
 menu() {
   for i in "${!PICS[@]}"; do

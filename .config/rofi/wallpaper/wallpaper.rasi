@@ -1,0 +1,115 @@
+/*****----- Configuration -----*****/
+configuration {
+    show-icons:                 true;
+}
+
+/*****----- Global Properties -----*****/
+@import                          "shared/colors.rasi"
+@import                          "shared/fonts.rasi"
+
+
+/*****----- Main Window -----*****/
+window {
+    width:                        80%;
+    y-offset:                     48px;
+    border:                       2px solid;
+    border-radius:                3px;
+    border-color:                 @selected;
+    cursor:                       "default";
+    location:                     north;
+    anchor:                       north;
+    fullscreen:                   false;
+    enabled:                      true;
+}
+
+/* ---- Mainbox ---- */
+mainbox {
+    enabled:                      true;
+    orientation:                  horizontal;
+    background-color:             @background;
+    children:                     ["listbox"];
+}
+
+/* ---- Listbox ---- */
+listbox {
+    background-color:            transparent;
+    orientation:                 vertical;
+    children:                    [ "inputbar", "message", "listview" ];
+}
+
+/* ---- Inputbar ---- */
+inputbar {
+    enabled:                      true;
+    text-color:                   @foreground;
+    margin:                       5px;
+    background-color:             @background;
+    children:                     [ "textbox-prompt-colon", "entry" ];
+}
+
+textbox-prompt-colon {
+    enabled:                      true;
+    expand:                       false;
+    str:                          " ";
+    background-color:             transparent;
+    text-color:                   inherit;
+}
+
+entry {
+    enabled:                      true;
+    background-color:             transparent;
+    text-color:                   inherit;
+    cursor:                       text;
+    placeholder:                  "Search";
+    placeholder-color:            inherit;
+}
+
+/* ---- Listview ---- */
+listview {
+    enabled:                      true;
+    columns:                      10;
+    lines:                        1;
+    scrollbar:                    true;
+    layout:                       vertical;
+    reverse:                      false;
+    spacing:                      5px;
+    fixed-height:                 true;
+    fixed-columns:                true;    
+    background-color:             @background;
+    border:                       0px;
+}
+
+/* ---- Element ---- */
+element {
+    enabled:                      true;
+    cursor:                       pointer;
+    background-color:             @background;
+    border-radius:                3px;
+    border:                       2px solid;
+    orientation:                  vertical;
+
+}
+
+element normal.normal {
+    border-color:                transparent;
+    background-color:            inherit;
+}
+
+element selected.normal {
+    border-color:                @selected;
+    background-color:            inherit;
+}
+
+element alternate.normal {
+    border-color:                transparent;
+    background-color:            inherit;
+}
+
+
+element-icon {
+    size:                        120px;
+    cursor:                      inherit;
+}
+
+element-text {
+    enabled: false;
+}
