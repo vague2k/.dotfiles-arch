@@ -5,7 +5,6 @@
 ![2024-02-24T01:11:02,249906469-05:00](https://github.com/vague2k/.dotfiles-arch/assets/121782036/458ee146-dccd-4a9f-854d-fcf8e08a39ec)
 ![2024-02-24T01:13:11,502057343-05:00](https://github.com/vague2k/.dotfiles-arch/assets/121782036/df8c27b6-767e-43fc-b822-bf8090cbb102)
 
-
 ## Welcome to dependency hell.
 
 This is amalgamation of different configs I've found around the internet and [r/unixporn](https://www.reddit.com/r/unixporn/) mixed with personal tastes. If you like watch you see feel free to copy something.
@@ -33,6 +32,7 @@ Most of the packages can be installed with pacman. A couple can be found in the 
 - Colorscheme from wallpaper - [pywal](https://github.com/dylanaraps/pywal)
 - Editor - [nvim/neovim](https://github.com/neovim/neovim)
 - Logout/Display manager - [sddm](https://github.com/sddm/sddm)
+- Lockscreen - [hyprlock](https://github.com/hyprwm/hyprlock)
 - Sddm Theme - [reactionary](https://www.opendesktop.org/p/1376447)
 - File manager - [thunar](https://archlinux.org/packages/extra/x86_64/thunar/)
 - TUI File manager - [lf](https://github.com/gokcehan/lf)
@@ -45,11 +45,10 @@ Most of the packages can be installed with pacman. A couple can be found in the 
 
 I try to keep all the tools hyprland uses to be as compatible as possible with wayland.
 
-- App launcher - [rofi](https://github.com/davatorium/rofi)
+- App launcher/Powermenu - [rofi](https://github.com/davatorium/rofi)
 - Wallpaper Daemon - [swww (AUR)](https://github.com/LGFae/swww)
 - Notification Daemon - [mako](https://github.com/emersion/mako)
 - Bar - [waybar](https://github.com/Alexays/Waybar)
-- Logout Menu - [wlogout (AUR)](https://github.com/ArtsyMacaw/wlogout)
 
 #### Stuff you might want
 
