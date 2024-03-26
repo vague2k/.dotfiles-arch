@@ -1,3 +1,10 @@
+/**
+ *
+ * Author : Alberto Hernandez
+ * Github : @vague2k
+ * 
+ **/
+
 /*****----- Configuration -----*****/
 configuration {
     show-icons:                 true;
@@ -11,7 +18,7 @@ configuration {
 /*****----- Main Window -----*****/
 window {
     width:                        80%;
-    y-offset:                     48px;
+    y-offset:                     12px;
     border:                       2px solid;
     border-radius:                3px;
     border-color:                 @selected;

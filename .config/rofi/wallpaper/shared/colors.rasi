@@ -1,3 +1,10 @@
+/**
+ *
+ * Author : Alberto Hernandez
+ * Github : @vague2k
+ *
+ **/
+
 /* Import color-scheme from `colors` directory */
 
 @import "~/.config/rofi/colors/wal-colors.rasi"

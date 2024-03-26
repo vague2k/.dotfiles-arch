@@ -45,7 +45,7 @@ Most of the packages can be installed with pacman. A couple can be found in the 
 
 I try to keep all the tools hyprland uses to be as compatible as possible with wayland.
 
-- App launcher/Powermenu - [rofi](https://github.com/davatorium/rofi)
+- App launcher/Powermenu - [rofi (lbonn's wayland fork)](https://github.com/lbonn/rofi)
 - Wallpaper Daemon - [swww (AUR)](https://github.com/LGFae/swww)
 - Notification Daemon - [mako](https://github.com/emersion/mako)
 - Bar - [waybar](https://github.com/Alexays/Waybar)
