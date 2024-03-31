@@ -1,3 +1,6 @@
+/* The css styles are supposed to represent how the modules look 
+* starting from left to right as closely as possible*/
+
 @import url("../../.cache/wal/colors-gtk3.css");
 
 * {
@@ -5,8 +8,10 @@
   font-family: "JetBrainsMono Nerd Font";
 }
 
+/* Overarching styles */
+
 window#waybar {
-  background: @background;
+  background: transparent;
   color: @foreground;
 }
 
@@ -16,27 +21,50 @@ tooltip {
   border-radius: 5px;
 }
 
-#battery,
-#network,
-#pulseaudio,
-#cpu,
-#disk,
-#memory {
-  margin: 0px 10px;
+/* Left modules */
+
+#custom-logo,
+#custom-launcher,
+#custom-wallpaper,
+#tray,
+#window {
+  background: @background;
+  border-radius: 8px;
+  padding: 0px 10px;
+  margin: 3px 0px;
 }
 
+/* Overwritting the previous padding style on 'custom-logo' 
+* to give proper padding to nerd font icon */
+#custom-logo {
+  padding: 0px 15px 0px 10px;
+}
+
+/* If no windows are present on the screen,
+* this module will be transparent */
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+/* Center modules */
+
 #workspaces {
-  padding: 6px;
+  background: @background;
+  border-radius: 8px;
+  padding: 0px 5px;
+  margin: 4px 10px;
 }
 
 #workspaces button {
-  padding: 0px 15px;
-  margin: 2px;
+  padding: 0px 9px;
+  margin: 6px 2px;
+  border-radius: 20px;
   background: @color2Alpha;
-  transition: all 0.3s cubic-bezier(0.11, 1.09, 0.6, 0.96);
+  transition: all 0.5s cubic-bezier(0.11, 1.09, 0.6, 0.96);
 }
 
 #workspaces button.active {
+  margin: 6px 2px;
   padding: 0px 35px;
   background-color: @color13;
 }
@@ -45,12 +73,28 @@ tooltip {
   background-color: @color4Alpha;
 }
 
-#system,
-#custom-launcher,
-#custom-wlogout,
-#window,
-#tray,
-#cycle,
+/* Right modules */
+
+/* These modules are children of group/system */
+#battery,
+#network,
+#cpu,
+#disk,
+#pulseaudio,
+#memory {
+  margin: 0px 10px;
+}
+
+/* group/system */
+#system {
+  background: @background;
+  border-radius: 8px;
+  margin: 3px 0px;
+}
+
 #clock {
-  padding: 0px 12px;
+  background: @background;
+  border-radius: 8px;
+  padding: 0px 10px;
+  margin: 3px 0px;
 }

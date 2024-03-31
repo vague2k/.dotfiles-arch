@@ -4,15 +4,16 @@
 	"spacing": 10,
     "layer": "top",
     "position": "top",
-    // "margin-top": 3,
-    // "margin-left": 5,
-    // "margin-right": 5,
+    "margin-top": 3,
+    "margin-left": 5,
+    "margin-right": 5,
     "include": [
       "~/.config/waybar/modules.json"
     ],
     "modules-left": [
+        "custom/logo",
         "custom/launcher",
-        "custom/cycle",
+        "custom/wallpaper",
         "tray",
         "hyprland/window"
     ],
@@ -20,24 +21,9 @@
       "hyprland/workspaces"
     ],
     "modules-right": [
+      "group/audio",
       "group/system",
-    ]
-  },
-  {
-    "height": 38,
-	"spacing": 10,
-    "layer": "top",
-    "position": "bottom",
-    // "margin-top": 3,
-    // "margin-left": 5,
-    // "margin-right": 5,
-    "include": [
-      "~/.config/waybar/modules.json"
-    ],
-    "modules-right": [
-      "pulseaudio",
-      "clock",
-      "custom/wlogout"
+      "clock"
     ]
   }
 ]

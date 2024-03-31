@@ -1,4 +1,42 @@
+// The declared modules are supposed to represent how they are layed out 
+// starting from left to right as closely as possible
+
 {
+
+    // Left modules
+
+    "custom/logo": {
+        "format": "<span font='15'>{icon}</span>",
+        "format-icons": "󰣇"
+    },
+
+    "custom/launcher": {
+        "format": "Apps",
+        "on-click": "~/.config/rofi/launchers/type-1/launcher.sh"
+    },
+
+    "custom/wallpaper":{
+        "format":"<span font='13' rise='-1000'> </span> Wallpapers",
+        "on-click": "~/.config/hypr/scripts/wallpaper-select.sh",
+        "interval" : 86400, // once every day
+        "tooltip": true
+    },
+
+    "tray": {
+        "icon-size": 20,
+        "spacing": 7
+    },
+
+    "hyprland/window": {
+        "rewrite": {
+            "(.*) - Firefox": "$1",
+            "(.*) - kitty": "[$1]"
+        },
+        "separate-outputs": true
+    },
+
+    // Center modules
+
     "hyprland/workspaces": {
         "active-only": false,
         "all-outputs": false,
@@ -12,56 +50,51 @@
         },
         "persistent-workspaces": {
             "DP-1": [1, 2, 3, 4 ,5],
-            "HDMI-A-1": [1, 2, 3, 4 ,5],
+            "HDMI-A-1": [1, 2, 3, 4 ,5]
         }
     },
 
-    "hyprland/window": {
-        "rewrite": {
-            "(.*) - Firefox": "$1",
-            "(.*) - kitty": "[$1]"
-        },
-        "separate-outputs": true
-    },
+    // Right modules
+    // group/system
 
-    "cpu": {
-        "format": "󰻠 {usage}%",
-        "format-alt": "󰻠 {avg_frequency} GHz",
-        "interval": 1
-    },
-
-    "memory": {
-        "format": "󰍛 {used} GiB",
-        "format-alt": "󰍛 {}%",
-        "interval": 5
+    "disk": {
+        "interval": 60,
+        "format": "<span font='13' rise='-1000'></span> {percentage_used}%|{used}"
     },
 
     "network": {
         "on-click": "kitty -e nmtui",
         "format-disconnected": "󰖪 0%",
-        "format-ethernet": "󰈀 100%",
+        "format-ethernet": "<span font='13' rise='-1000'>󰈀</span> 100%",
         "format-linked": "{ifname} (No IP)",
-        "format-wifi": "  {signalStrength}%",
+        "format-wifi": "<span font='13' rise='-1000'></span> {signalStrength}%",
         "tooltip-format": "Connected to {essid} {ifname} via {gwaddr}"
+    },
+
+    "memory": {
+        "format": "<span font='13' rise='-1000'>󰍛</span> {used} GiB",
+        "format-alt": "<span font='13' rise='-1000'>󰍛</span> {percentage}%",
+        "interval": 5
+    },
+
+    "cpu": {
+        "format": "<span font='13' rise='-1000'>󰻠</span> {usage}%",
+        "format-alt": "󰻠 {avg_frequency} GHz",
+        "interval": 1
     },
 
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-icons": {
             "default": [
-                "󰕿",
-                "󰖀",
-                "󰕾"
+                "<span font='13' rise='-1000'>󰕿</span>",
+                "<span font='13' rise='-1000'>󰖀</span>",
+                "<span font='13' rise='-1000'>󰕾</span>"
             ]
         },
         "format-muted": "󰝟",
         "on-click": "pavucontrol",
         "scroll-step": 5
-    },
-
-    "disk": {
-        "interval": 60,
-        "format": " {percentage_used}%|{used}",
     },
 
     "clock": {
@@ -71,30 +104,7 @@
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
 
-    "tray": {
-        "icon-size": 20,
-        "spacing": 2
-    },
-
-    "custom/launcher": {
-        "format": "{icon}Apps",
-        "format-icons": "󰣇 ",
-        "on-click": "rofi -show drun -show-icons"
-    },
-
-    "custom/cycle":{
-        "format":"  Wallpapers",
-        "exec": "echo ; echo 󰸉 wallpaper select",
-        "on-click": "~/.config/hypr/scripts/wallpaper-select.sh",
-        "interval" : 86400, // once every day
-        "tooltip": true,
-    },
-
-    "custom/wlogout": {
-        "format": "{icon}",
-        "format-icons": " ",
-        "on-click": "wlogout",
-    },
+    // Groups
 
     "group/system": {
         "orientation": "horizontal",
@@ -103,6 +113,7 @@
             "network",
             "memory",
             "cpu",
+            "pulseaudio"
         ]
-    },
+    }
 }
