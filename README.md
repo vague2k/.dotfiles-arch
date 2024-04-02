@@ -1,9 +1,8 @@
 # 📁 My Dotfiles for Arch Linux
 
 ![2024-02-24T01:15:07,749589197-05:00](https://github.com/vague2k/.dotfiles-arch/assets/121782036/813b9bea-6bb4-47d3-97b1-66bb4632d405)
-![2024-02-24T01:10:13,533739966-05:00](https://github.com/vague2k/.dotfiles-arch/assets/121782036/ce484399-6b39-4a87-a5b7-f419f8776707)
-![2024-02-24T01:11:02,249906469-05:00](https://github.com/vague2k/.dotfiles-arch/assets/121782036/458ee146-dccd-4a9f-854d-fcf8e08a39ec)
-![2024-02-24T01:13:11,502057343-05:00](https://github.com/vague2k/.dotfiles-arch/assets/121782036/df8c27b6-767e-43fc-b822-bf8090cbb102)
+
+https://github.com/vague2k/.dotfiles-arch/assets/121782036/be46023e-8f35-4d34-8c87-5cfb2e80b6d9
 
 ## Welcome to dependency hell.
 
