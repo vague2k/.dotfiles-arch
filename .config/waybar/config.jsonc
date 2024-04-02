@@ -21,7 +21,7 @@
       "hyprland/workspaces"
     ],
     "modules-right": [
-      "group/audio",
+      "custom/updates",  
       "group/system",
       "clock"
     ]

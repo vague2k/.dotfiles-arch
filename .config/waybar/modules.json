@@ -7,19 +7,21 @@
 
     "custom/logo": {
         "format": "<span font='15'>{icon}</span>",
-        "format-icons": "󰣇"
+        "format-icons": "󰣇",
+        "on-click": ""
     },
 
     "custom/launcher": {
         "format": "Apps",
-        "on-click": "~/.config/rofi/launchers/type-1/launcher.sh"
+        "on-click": "~/.config/rofi/launchers/type-1/launcher.sh",
+        "tooltip": false
     },
 
     "custom/wallpaper":{
         "format":"<span font='13' rise='-1000'> </span> Wallpapers",
         "on-click": "~/.config/hypr/scripts/wallpaper-select.sh",
         "interval" : 86400, // once every day
-        "tooltip": true
+        "tooltip": false
     },
 
     "tray": {
@@ -55,6 +57,19 @@
     },
 
     // Right modules
+
+    "custom/updates": {
+        "format": "<span font='12' rise='-1000'></span>  {}",
+        "tooltip-format": "{}",
+        "escape": true,
+        "return-type": "json",       
+        "exec": "~/.config/dotfiles-scripts/check-updates.sh",
+        "restart-interval": 60,
+        "on-click": "kitty --class script-floating -e ~/.config/dotfiles-scripts/install-updates.sh",
+        "on-click-right": "kitty --class script-floating -e pacseek",
+        "tooltip": false
+    },
+
     // group/system
 
     "disk": {
@@ -63,7 +78,7 @@
     },
 
     "network": {
-        "on-click": "kitty -e nmtui",
+        "on-click": "kitty --class script-floating -e nmtui",
         "format-disconnected": "󰖪 0%",
         "format-ethernet": "<span font='13' rise='-1000'>󰈀</span> 100%",
         "format-linked": "{ifname} (No IP)",
@@ -98,8 +113,8 @@
     },
 
     "clock": {
-        "format": "{:%a %d %b %I:%M}",
-        "format-alt": "{:%I:%M}",
+        "format": "{:%a %d %b %I:%M %p}",
+        "format-alt": "{:%I:%M %p}",
         "tooltip": "true",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },

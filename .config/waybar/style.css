@@ -75,13 +75,20 @@ window#waybar.empty #window {
 
 /* Right modules */
 
+#custom-updates {
+  background: @background;
+  border-radius: 8px;
+  padding: 0px 10px;
+  margin: 3px 0px;
+}
+
 /* These modules are children of group/system */
 #battery,
 #network,
 #cpu,
 #disk,
-#pulseaudio,
-#memory {
+#memory,
+#pulseaudio {
   margin: 0px 10px;
 }
 
