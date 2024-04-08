@@ -1,34 +1,27 @@
 // The declared modules are supposed to represent how they are layed out 
 // starting from left to right as closely as possible
-
 {
-
     // Left modules
-
     "custom/logo": {
         "format": "<span font='15'>{icon}</span>",
         "format-icons": "󰣇",
         "on-click": ""
     },
-
     "custom/launcher": {
         "format": "Apps",
         "on-click": "~/.config/rofi/launchers/type-1/launcher.sh",
         "tooltip": false
     },
-
-    "custom/wallpaper":{
-        "format":"<span font='13' rise='-1000'> </span> Wallpapers",
+    "custom/wallpaper": {
+        "format": "<span font='13' rise='-1000'> </span> Wallpapers",
         "on-click": "~/.config/hypr/scripts/wallpaper-select.sh",
-        "interval" : 86400, // once every day
+        "interval": 86400, // once every day
         "tooltip": false
     },
-
     "tray": {
         "icon-size": 20,
         "spacing": 7
     },
-
     "hyprland/window": {
         "rewrite": {
             "(.*) - Firefox": "$1",
@@ -36,9 +29,7 @@
         },
         "separate-outputs": true
     },
-
     // Center modules
-
     "hyprland/workspaces": {
         "active-only": false,
         "all-outputs": false,
@@ -51,32 +42,39 @@
             "urgent": ""
         },
         "persistent-workspaces": {
-            "DP-1": [1, 2, 3, 4 ,5],
-            "HDMI-A-1": [1, 2, 3, 4 ,5]
+            "DP-1": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "HDMI-A-1": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
         }
     },
-
     // Right modules
-
     "custom/updates": {
         "format": "<span font='12' rise='-1000'></span>  {}",
         "tooltip-format": "{}",
         "escape": true,
-        "return-type": "json",       
+        "return-type": "json",
         "exec": "~/.config/dotfiles-scripts/check-updates.sh",
         "restart-interval": 60,
         "on-click": "kitty --class script-floating -e ~/.config/dotfiles-scripts/install-updates.sh",
         "on-click-right": "kitty --class script-floating -e pacseek",
         "tooltip": false
     },
-
     // group/system
-
     "disk": {
         "interval": 60,
         "format": "<span font='13' rise='-1000'></span> {percentage_used}%|{used}"
     },
-
     "network": {
         "on-click": "kitty --class script-floating -e nmtui",
         "format-disconnected": "󰖪 0%",
@@ -85,19 +83,16 @@
         "format-wifi": "<span font='13' rise='-1000'></span> {signalStrength}%",
         "tooltip-format": "Connected to {essid} {ifname} via {gwaddr}"
     },
-
     "memory": {
         "format": "<span font='13' rise='-1000'>󰍛</span> {used} GiB",
         "format-alt": "<span font='13' rise='-1000'>󰍛</span> {percentage}%",
         "interval": 5
     },
-
     "cpu": {
         "format": "<span font='13' rise='-1000'>󰻠</span> {usage}%",
         "format-alt": "󰻠 {avg_frequency} GHz",
         "interval": 1
     },
-
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-icons": {
@@ -111,16 +106,13 @@
         "on-click": "pavucontrol",
         "scroll-step": 5
     },
-
     "clock": {
         "format": "{:%a %d %b %I:%M %p}",
         "format-alt": "{:%I:%M %p}",
         "tooltip": "true",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
-
     // Groups
-
     "group/system": {
         "orientation": "horizontal",
         "modules": [

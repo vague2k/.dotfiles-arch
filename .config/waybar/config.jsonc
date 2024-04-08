@@ -1,29 +1,29 @@
 [
-  {
-    "height": 38,
-	"spacing": 10,
-    "layer": "top",
-    "position": "top",
-    "margin-top": 3,
-    "margin-left": 5,
-    "margin-right": 5,
-    "include": [
-      "~/.config/waybar/modules.json"
-    ],
-    "modules-left": [
-        "custom/logo",
-        "custom/launcher",
-        "custom/wallpaper",
-        "tray",
-        "hyprland/window"
-    ],
-    "modules-center": [
-      "hyprland/workspaces"
-    ],
-    "modules-right": [
-      "custom/updates",  
-      "group/system",
-      "clock"
-    ]
-  }
+    {
+        "height": 38,
+        "spacing": 10,
+        "layer": "top",
+        "position": "top",
+        "margin-top": 3,
+        "margin-left": 5,
+        "margin-right": 5,
+        "include": [
+            "~/.config/waybar/modules.json"
+        ],
+        "modules-left": [
+            "custom/logo",
+            "custom/launcher",
+            "custom/wallpaper",
+            "tray",
+            "hyprland/window"
+        ],
+        "modules-center": [
+            "hyprland/workspaces"
+        ],
+        "modules-right": [
+            "custom/updates",
+            "group/system",
+            "clock"
+        ]
+    }
 ]
